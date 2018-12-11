@@ -14,73 +14,118 @@ class Calculator(Frame):
         
         #Number Buttons
         self._9Btn = Button(self, text = "9", command = self._9Press)
-        self._9Btn.grid.grid(row = 4, column = 0)
+        self._9Btn.grid.grid(row = 5, column = 0)
         
         self._8Btn = Button(self, text = "8", command = self._8Press)
-        self._fileLabel.grid(row = 4, column = 1)
-        
-        self._7Btn = Button(self, text = "7", command = self._7Press)
-        self._fileLabel.grid(row = 4, column = 2)
-        
-        self._6Btn = Button(self, text = "6", command = self._6Press)
-        self._fileLabel.grid(row = 5, column = 0)
-        
-        self._5Btn = Button(self, text = "5", command = self._5Press)
         self._fileLabel.grid(row = 5, column = 1)
         
-        self._4Btn = Button(self, text = "4", command = self._4Press)
+        self._7Btn = Button(self, text = "7", command = self._7Press)
         self._fileLabel.grid(row = 5, column = 2)
-
-        self._3Btn = Button(self, text = "3", command = self._3Press)
+        
+        
+        self._6Btn = Button(self, text = "6", command = self._6Press)
         self._fileLabel.grid(row = 6, column = 0)
         
-        self._2Btn = Button(self, text = "2", command = self._2Press)
+        self._5Btn = Button(self, text = "5", command = self._5Press)
         self._fileLabel.grid(row = 6, column = 1)
         
-        self._1Btn = Button(self, text = "1", command = self._1Press)
+        self._4Btn = Button(self, text = "4", command = self._4Press)
         self._fileLabel.grid(row = 6, column = 2)
         
-        self._0Btn = Button(self, text = "0", command = self._3Press)
+
+        self._3Btn = Button(self, text = "3", command = self._3Press)
         self._fileLabel.grid(row = 7, column = 0)
         
-        
-        #Decimal button, and parenthesis buttons
-        self._decimalBtn = Button(self, text = ".", command = self._decimalPress)
+        self._2Btn = Button(self, text = "2", command = self._2Press)
         self._fileLabel.grid(row = 7, column = 1)
         
-        self._parenBtn = Button(self, text = "(", command = self._parenPress)
+        self._1Btn = Button(self, text = "1", command = self._1Press)
         self._fileLabel.grid(row = 7, column = 2)
         
-        self._endParenBtn = Button(self, text = ")", command = self._endParenPress)
-        self._fileLabel.grid(row = 7, column = 3)
+        
+        self._0Btn = Button(self, text = "0", command = self._3Press)
+        self._fileLabel.grid(row = 8, column = 0)
         
         
-        #Operation Buttons
-        self._multiplyBtn = Button(self, text = "*", command = self._multiplyPress)
-        self._multiplyBtn.grid.grid(row = 4, column = 4)
+        #Decimal button, ngative sign, and parenthesis buttons
+        self._decimalBtn = Button(self, text = ".", command = self._decimalPress)
+        self._fileLabel.grid(row = 8, column = 1)
         
-        self._divideBtn = Button(self, text = "/", command = self._dividePress)
-        self._divideBtn.grid.grid(row = 5, column = 4)
+        self.negativeBtn = Button(self, text = "(-)", command = self._negativePress)
+        self._fileLabel.grid(row = 8, column = 2)
         
-        self._addBtn = Button(self, text = "+", command = self._addPress)
-        self._addBtn.grid.grid(row = 6, column = 4)
+        self._parenBtn = Button(self, text = "(", command = self._parenPress)
+        self._fileLabel.grid(row = 3, column = 2)
         
-        self._subtractBtn = Button(self, text = "-", command = self._subtractPress)
-        self._subtractBtn.grid.grid(row = 7, column = 4)
+        self._endParenBtn = Button(self, text = "(-)", command = self._endParenPress)
+        self._fileLabel.grid(row = 3, column = 3)
         
-        exponent
+        self._sineBtn = Button(self, text = "sin", command = self._sinePress)
+        self._sineBtn.grid(row = 3, column = 0)
+    
+    
+    #Number Button Functions    
+    def _9Press(self):
+        return None
         
-        squareroot
+    def _8Press(self):
+        return None
+    
+    def _7Press(self):
+        return None
         
-        self._sineBtn = Button(self, text = "sin", command = self._multiplyPress)
-        self._sineBtn.grid.grid(row = 3, column = 0)
+    def _6Press(self):
+        return None
+    
+    def _5Press(self):
+        return None
+    
+    def _4Press(self):
+        return None
+    
+    def _3Press(self):
+        return None
+    
+    def _2Press(self):
+        return None
+    
+    def _1Press(self):
+        return None
+    
+    def _0Press(self):
+        return None 
+    
+    #Decimal button function
+    def _decimalPress(self):
+        return None
+    
+    #Negative sign button function
+    def _negativePress(self):
+        return None
+   
+    #Parenthesis buttons functions
+    def _parenPress(self):   
+        return None
+    
+    def _endParenPress(self):   
+        return None
+    
+    #Operation Buttons
         
-        
-        cosine
-        tangeant
-        log
-        ln
-        factorial
+    def _multiplyPress(self):
+        return None
+    
+    def _dividePress(self):
+        return None
+    
+    def _addPress(self):
+        return None
+    
+    def _subtractPress(self):
+        return None
+    
+    def _sinePress(self):
+        return None
 
 def main(): 
     Calculator().mainloop()
