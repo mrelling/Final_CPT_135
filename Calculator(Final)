@@ -11,6 +11,8 @@ class Calculator(Frame):
         
         self._display = Frame(self)
         self._display.grid(row = 0, column = 0, rowspan = 2, columnspan = 5, sticky = N+S+E+W)
+        self._displayArea = Text(self._display, width = 80, height = 10)
+        self._displayArea.grid(row = 0, column = 0, sticky = N+S+E+W)
         
         #Number Buttons
         self._9Btn = Button(self, text = "9", command = self._9Press)
