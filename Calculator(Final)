@@ -1,0 +1,68 @@
+from tkinter import *
+import tkinter.messagebox
+import os.path
+
+class Calculator(Frame):
+    def __init__(self):
+        #Setup window and widgets
+        Frame.__init__(self)
+        self.master.title("Text Editor")
+        self.grid()
+        
+        #Number Buttons
+        self._9Btn = Button(self, text = "9", command = self._9Press)
+        self._9Btn.grid.grid(row = 3, column = 0)
+        
+        self._8Btn = Button(self, text = "8", command = self._8Press)
+        self._fileLabel.grid(row = 3, column = 1)
+        
+        self._7Btn = Button(self, text = "7", command = self._7Press)
+        self._fileLabel.grid(row = 3, column = 2)
+        
+        self._6Btn = Button(self, text = "6", command = self._6Press)
+        self._fileLabel.grid(row = 4, column = 0)
+        
+        self._5Btn = Button(self, text = "5", command = self._5Press)
+        self._fileLabel.grid(row = 4, column = 1)
+        
+        self._4Btn = Button(self, text = "4", command = self._4Press)
+        self._fileLabel.grid(row = 4, column = 2)
+
+        self._3Btn = Button(self, text = "3", command = self._3Press)
+        self._fileLabel.grid(row = 5, column = 0)
+        
+        self._2Btn = Button(self, text = "2", command = self._2Press)
+        self._fileLabel.grid(row = 5, column = 1)
+        
+        self._1Btn = Button(self, text = "1", command = self._1Press)
+        self._fileLabel.grid(row = 5, column = 2)
+        
+        self._0Btn = Button(self, text = "0", command = self._3Press)
+        self._fileLabel.grid(row = 6, column = 0)
+        
+        #Decimal button, and parenthesis buttons
+        self._decimalBtn = Button(self, text = ".", command = self._decimalPress)
+        self._fileLabel.grid(row = 6, column = 1)
+        
+        self._parenBtn = Button(self, text = "(", command = self._parenPress)
+        self._fileLabel.grid(row = 6, column = 2)
+        
+        self._endParenBtn = Button(self, text = ")", command = self._endParenPress)
+        self._fileLabel.grid(row = 6, column = 3)
+        
+        #Operation Buttons
+        self._multiplyBtn = Button(self, text = "*", command = self._multiplyPress)
+        self._multiplyBtn.grid.grid(row = 3, column = 4)
+        
+        self._divideBtn = Button(self, text = "/", command = self._dividePress)
+        self._divideBtn.grid.grid(row = 4, column = 4)
+        
+        self._addBtn = Button(self, text = "+", command = self._addPress)
+        self._addBtn.grid.grid(row = 5, column = 4)
+        
+        self._subtractBtn = Button(self, text = "-", command = self._subtractPress)
+        self._subtractBtn.grid.grid(row = 6, column = 4)
+
+def main(): 
+    Calculator().mainloop()
+                                   
